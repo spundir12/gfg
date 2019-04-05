@@ -57,14 +57,15 @@ public class SubArrayWithGivenSum
 			}
 			if(s==sum)
 			{
-				System.out.println("index : "+i+","+j);
-				break;
+				System.out.println((i+1)+" "+(j+1));
+				return;
 			}
 			else
 			{
 				j++;
 			}
 		}
+		System.out.println(-1);
 	}
 	public static void main(String[] args) {
 		int arr[]= {1,4,20,3,10,5};
