@@ -1,4 +1,3 @@
-package gfg.array;
 /*
 Given an unsorted array A of size N of non-negative integers, find a continuous sub-array which adds to a given number S.
 Input:
@@ -31,6 +30,9 @@ Explanation :
 Testcase1: sum of elements from 2nd position to 4th position is 12
 Testcase2: sum of elements from 1st position to 5th position is 15
 */
+
+package gfg.array;
+
 public class SubArrayWithGivenSum {
 
 	public static void findSubArray(int arr[],int n,int s)
