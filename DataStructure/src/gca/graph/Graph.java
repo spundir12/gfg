@@ -1,6 +1,35 @@
 
 /*
  * https://www.geeksforgeeks.org/graph-and-its-representations/
+ * 
+ *	Graph
+ *BFS
+ *DFS
+ *Topological Sorting
+ *
+ *Graph can be represented by
+ *	Adjacency Matrix  VxV matrix
+ *	Adjacency List	for every vertex there is a list.
+ *
+ *		0----------1
+ *      |	      /|
+ *      |       /  |
+ *      |     /    |
+ *      |   /      |
+ *      | /        |
+ *      3          2
+ *
+ *    adjacency list
+ *
+ *     0--> 1, 3
+ *     1--> 0, 3, 2
+ *     2--> 1
+ *     3--> 0,1
+ *
+ *     adjacency matrix
+ *
+ *			C++									Java
+ *	Array of Vector for Adjacency List		Array of ArrayLists adjacency List
  */
 package gca.graph;
 
