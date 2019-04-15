@@ -9,8 +9,10 @@ public class DFS {
 	{
 		if(adjList[u]==null)
 			adjList[u]=new ArrayList<>();
+		//since graph is undirected we have to store value from v to u
 		if(adjList[v]==null)
 			adjList[v]=new ArrayList<>();
+
 		adjList[u].add(v);
 		adjList[v].add(u);
 	}

@@ -19,6 +19,30 @@ package mustdocoding.array;
 
 public class EquilibriumIndex {
 
+	public static int getEquilibriumIndex(int arr[],int n)
+    {
+	  //create two arr one is having sum from left to right
+	  // another arr is having sum from right to left
+	 // the index where both array has same value is called equilibrium index
+       int a1[]=new int[n];
+       int a2[]=new int[n];
+       int s1=0;
+       int s2=0;
+       for(int i=0,j=n-1;i<n;i++,j--)
+       {
+           s1+=arr[i];
+           a1[i]=s1;
+           
+           s2+=arr[j];
+           a2[j]=s2;
+       }
+       for(int i=0;i<n;i++)
+       {
+           if(a1[i]==a2[i])
+               return i+1;
+       }
+       return -1;
+    }
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 

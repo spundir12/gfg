@@ -47,7 +47,6 @@ import java.util.LinkedList;
 			adjList[i]=new LinkedList<>();
 		}
 	}
-	
 	public void addEdge(GraphOldWay g, int src, int dest)
 	{
 		g.adjList[src].add(dest);
@@ -63,13 +62,13 @@ public class Graph{
 		{
 			adjList[u]=new ArrayList<>();
 		}
+		//since graph is undirected we have to store value from v to u
 		if(adjList[v]==null)
 		{
 			adjList[v]=new ArrayList<>();
 		}
 		adjList[u].add(v);
 		adjList[v].add(u);
-		
 	}
 	public static void main(String[] args) {
 		int v=4;
